@@ -32,7 +32,7 @@ server.route({
       channel:  process.env.SLACK_CHANNEL,
       username: "JS Belgrade CFP",
       icon_url: "https://raw.githubusercontent.com/jsbelgrade/assets/master/logo/JSBelgrade-logo-512.png",
-      text:     `*<${request.payload.issue.user.url}|${request.payload.issue.user.login}>* submitted a new talk proposal: "${request.payload.issue.title}". Check it here: <${request.payload.issue.url}|${request.payload.issue.url}>.`
+      text:     `*<${request.payload.issue.user.html_url}|${request.payload.issue.user.login}>* submitted a new talk proposal: "${request.payload.issue.title}". Check it here: <${request.payload.issue.html_url}|${request.payload.issue.html_url}>.`
     }
 
     Request.post(process.env.SLACK_URL).form({payload: JSON.stringify(response)})
