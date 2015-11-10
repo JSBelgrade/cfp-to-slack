@@ -22,8 +22,8 @@ server.route({
   method: 'POST',
   path:   '/',
   handler(request, reply) {
-    if (request.headers['x-hub-signature'] !== process.env.GH_SECRET)
-      return reply(Boom.unauthorized('Not so fast!'))
+    // if (request.headers['x-hub-signature'] !== process.env.GH_SECRET)
+    //  return reply(Boom.unauthorized('Not so fast!'))
     
     if (request.headers['x-github-event'] !== 'issues')
       return reply('🙈 ')
