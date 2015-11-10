@@ -11,6 +11,14 @@ server.connection({
 })
 
 server.route({
+  method: 'GET',
+  path:   '/',
+  handler(request, reply) {
+    reply('Hello, hello!')
+  }
+})
+
+server.route({
   method: 'POST',
   path:   '/',
   handler(request, reply) {
