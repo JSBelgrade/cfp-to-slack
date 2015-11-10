@@ -1,0 +1,29 @@
+{
+  "name": "cfp_to_slack",
+  "version": "1.0.0",
+  "description": "Send CFP github issues to Slack channel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JSBelgrade/cfp-to-slack.git"
+  },
+  "keywords": [
+    "slack",
+    "github",
+    "issues"
+  ],
+  "author": "Slobodan Stojanovic <slobodan@cloudhorizon.com> (http://slobodan.me/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JSBelgrade/cfp-to-slack/issues"
+  },
+  "homepage": "https://github.com/JSBelgrade/cfp-to-slack",
+  "dependencies": {
+    "boom": "^3.0.0",
+    "hapi": "^11.1.0",
+    "request": "^2.65.0"
+  }
+}
